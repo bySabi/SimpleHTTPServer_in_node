@@ -16,7 +16,6 @@ on run
 	end tell
 	tell application "Terminal"
 		activate
-		-- do script "source " & myPath & "script.sh " & finderSelection
 		set scriptPath to myPath & "SimpleHTTPServer_in_node.app/Contents/Resources/script.sh "
 		do script "bash " & scriptPath & finderSelection
 	end tell
